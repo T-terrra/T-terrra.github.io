@@ -1,5 +1,4 @@
 let count=0
-let counter=0
 const countUp=()=>{
     count++
     const countElement = document.querySelector('#count')
@@ -7,5 +6,6 @@ const countUp=()=>{
 }
 const countReset=()=>{
     count=0
-    countElement.innertext = '回数: 0'
+    const countElement = document.querySelector('#count')
+    countElement.innertext = '回数: '+ count
 }
